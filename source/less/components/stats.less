@@ -1,0 +1,42 @@
+@media (min-width: @desktop-width) {
+  .stats__wrapper {
+    .wrapper ();
+  }
+
+  .stats__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    margin-top: 26px;
+    padding-bottom: 72px;
+    border-bottom: 1px solid @lt_gray;
+  }
+
+  .stats__item {
+    min-width: 33.33%;
+    padding-left: 40px;
+    border-left: 1px solid @basic_blue;
+  }
+
+  .stats__item:first-child {
+    padding-left: 36px;
+    border-left: none;
+  }
+
+  .stats__number {
+    font-family: @font-family--additional;
+    font-size: 48px;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: normal;
+    color: @basic_blue;
+  }
+
+  .stats__description {
+    font-size: 12px;
+    line-height: 1.25;
+    color: @semi_black;
+    margin: 0;
+
+  }
+}

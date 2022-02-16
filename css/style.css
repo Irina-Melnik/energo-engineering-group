@@ -1161,7 +1161,7 @@ img {
   left: 0;
   width: 13px;
   height: 26px;
-  background-image: url(../../img/arrow-right.svg);
+  background-image: url(../img/arrow-right.svg);
   background-repeat: no-repeat;
 }
 .year__title--hide::after {
@@ -1171,7 +1171,7 @@ img {
   right: 0;
   width: 13px;
   height: 26px;
-  background-image: url(../../img/arrow-left.svg);
+  background-image: url(../img/arrow-left.svg);
   background-repeat: no-repeat;
 }
 .year__title--show::before,
@@ -1181,7 +1181,7 @@ img {
   top: 12px;
   width: 26px;
   height: 13px;
-  background-image: url(../../img/arrow-bottom.svg);
+  background-image: url(../img/arrow-bottom.svg);
   background-repeat: no-repeat;
 }
 .year__title--show::before {

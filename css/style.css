@@ -781,7 +781,7 @@ img {
   top: 12px;
   width: 26px;
   height: 13px;
-  background-image: url(../../img/arrow-bottom.svg);
+  background-image: url(../img/arrow-bottom.svg);
   background-repeat: no-repeat;
 }
 .product__item-title--show::before {
@@ -832,7 +832,7 @@ img {
     left: 0;
     width: 13px;
     height: 26px;
-    background-image: url(../../img/arrow-right.svg);
+    background-image: url(../img/arrow-right.svg);
     background-repeat: no-repeat;
   }
   .product__item-wrapper--closed .product__item-title::after {
@@ -842,7 +842,7 @@ img {
     right: 0;
     width: 13px;
     height: 26px;
-    background-image: url(../../img/arrow-left.svg);
+    background-image: url(../img/arrow-left.svg);
     background-repeat: no-repeat;
   }
 }

@@ -1159,7 +1159,7 @@ img {
   left: 0;
   width: 13px;
   height: 26px;
-  background-image: url(../../img/arrow-right.svg);
+  background-image: url(./img/arrow-right.svg);
   background-repeat: no-repeat;
 }
 .year__title--hide::after {

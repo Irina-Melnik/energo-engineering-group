@@ -585,8 +585,9 @@ img {
   padding-bottom: 16px;
 }
 .services__item-img {
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   margin: 0 auto;
 }
 .services__item-wrapper {
@@ -790,8 +791,9 @@ img {
   right: 0;
 }
 .product__item-img {
-  width: 280px;
-  height: 282px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   object-fit: cover;
   margin: 0 auto;
 }
@@ -1159,7 +1161,7 @@ img {
   left: 0;
   width: 13px;
   height: 26px;
-  background-image: url(./img/arrow-right.svg);
+  background-image: url(../../img/arrow-right.svg);
   background-repeat: no-repeat;
 }
 .year__title--hide::after {
@@ -1282,8 +1284,9 @@ img {
   text-align: center;
 }
 .info__img {
-  width: 279px;
-  height: 264px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
   margin: 0 auto;
   padding-bottom: 25px;
 }
@@ -1737,6 +1740,7 @@ img {
 }
 .contacts__map {
   position: relative;
+  min-height: 320px;
 }
 .contacts__info {
   font-size: 12px;

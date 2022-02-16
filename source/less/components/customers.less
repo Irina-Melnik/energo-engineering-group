@@ -1,0 +1,132 @@
+.customers__wrapper {
+  .wrapper();
+
+}
+
+.customers__title {
+  padding: 50px 20px;
+  border-top: 1px solid @lt_gray;
+  text-align: center;
+}
+
+.customers__list {
+  .list();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 30px;
+  column-gap: 15px;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.customers__item:first-child {
+  width: 101px;
+  height: 82px;
+  z-index: 1;
+}
+
+.customers__item:nth-child(2) {
+  width: 79px;
+  height: 80px;
+  z-index: 2;
+}
+
+.customers__item:nth-child(3) {
+  width: 91px;
+  height: 56px;
+  z-index: 6;
+}
+
+.customers__item:nth-child(4) {
+  width: 116px;
+  height: 85px;
+  z-index: 3;
+}
+
+.customers__item:nth-child(5) {
+  width: 155px;
+  height: 87px;
+  z-index: 4;
+}
+
+.customers__item:nth-child(6) {
+  width: 144px;
+  height: 82px;
+  z-index: 5;
+}
+
+.customers__item:nth-child(7) {
+  width: 202px;
+  height: 45px;
+  z-index: 7;
+}
+
+.customers__item:nth-child(8) {
+  width: 159px;
+  height: 113px;
+  z-index: 8;
+}
+
+@media (min-width: @desktop-width) {
+
+  .customers__title {
+    padding: 92px 234px 100px 234px;
+    border-top: 1px solid @lt_gray;
+  }
+
+  .customers__list {
+    gap: 35px;
+    margin-left: 228px;
+    margin-right: 170px;
+    margin-bottom: 50px;
+  }
+
+  .customers__item {
+    align-self: center;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .customers__item:first-child {
+    width: 184px;
+    height: 150px;
+  }
+
+  .customers__item:nth-child(2) {
+    width: 146px;
+    height: 146px;
+  }
+
+  .customers__item:nth-child(3) {
+    width: 194px;
+    height: 117px;
+  }
+
+  .customers__item:nth-child(4) {
+    width: 213px;
+    height: 157px;
+  }
+
+  .customers__item:nth-child(5) {
+    width: 284px;
+    height: 157px;
+  }
+
+  .customers__item:nth-child(6) {
+    width: 319px;
+    height: 180px;
+  }
+
+  .customers__item:nth-child(7) {
+    width: 372px;
+    height: 84px;
+  }
+
+  .customers__item:nth-child(8) {
+    width: 398px;
+    height: 208px;
+  }
+}

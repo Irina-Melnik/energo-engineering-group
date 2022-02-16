@@ -1,3 +1,16 @@
+  .email__link {
+    font-size: 20px;
+    line-height: 1.2;
+    color: @basic_gray;
+    text-decoration-line: underline;
+    cursor: pointer;
+
+    &--footer {
+      color: @basic_white;
+      text-decoration: none;
+    }
+  }
+
 @media (min-width: @desktop-width) {
   .email {
     display: flex;
@@ -10,5 +23,9 @@
     color: @basic_gray;
     text-decoration-line: underline;
     cursor: pointer;
+
+    &--footer {
+      color: @basic_white;
+    }
   }
 }

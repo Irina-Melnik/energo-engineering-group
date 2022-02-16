@@ -1,0 +1,125 @@
+.page-header__wrapper {
+  .wrapper ();
+}
+
+.page-header__menu {
+  position: relative;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-header__menu-toggler {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 24px;
+  height: 16px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &--line::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 1.5px;
+    background-color: @basic_black;
+    box-shadow: 0 8px 0 0 @basic_black, 0 16px 0 0 @basic_black;
+  }
+
+  &--cross {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 24px;
+      height: 1.5px;
+      background-color: @basic_black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+  }
+
+  &--nojs {
+    display: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__nav {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 100%;
+
+  &--closed {
+    display: none;
+  }
+}
+
+.page-header__phone,
+.page-header__email {
+  display: none;
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    display: grid;
+    grid-template-columns: 269px 1fr 289px;
+    grid-template-rows: auto auto;
+    min-height: 162px;
+  }
+
+  .page-header__menu {
+    grid-column: ~"1 / 2";
+    grid-row: ~"1 / 3";
+    margin-top: 47px;
+  }
+
+  .page-header__nav {
+    display: flex;
+    flex-direction: column;
+    grid-column: ~"2 / 3";
+    grid-row: ~"1 / 3";
+    margin-top: 57px; //67px-10px
+  }
+
+  .page-header__company-navigation {
+    display: block;
+  }
+
+  .page-header__production-navigation {
+    display: block;
+  }
+
+  .phone {
+    display: block;
+    grid-column: ~"3 / 4";
+    grid-row: ~"1 / 2";
+    margin-top: 35px;
+  }
+
+  .email {
+    display: block;
+    grid-column: ~"3 / 4";
+    grid-row: ~"2 / 3";
+  }
+}

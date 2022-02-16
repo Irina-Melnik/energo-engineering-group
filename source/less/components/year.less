@@ -1,0 +1,140 @@
+  .year__wrapper {
+    .wrapper();
+    background-color: @ltltlt_gray;
+  }
+
+  .year__title {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    padding: 5px 20px;
+
+    &--hide + ul {
+      // display: none;
+      visibility: hidden;
+      transform: scaleY(0);
+      max-height: 0px;
+      margin: 0px;
+    }
+
+    &--hide {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 13px;
+        height: 26px;
+        background-image: url(../../img/arrow-right.svg);
+        background-repeat: no-repeat;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 7px;
+        right: 0;
+        width: 13px;
+        height: 26px;
+        background-image: url(../../img/arrow-left.svg);
+        background-repeat: no-repeat;
+      }
+    }
+
+    &--show {
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        width: 26px;
+        height: 13px;
+        background-image: url(../../img/arrow-bottom.svg);
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+
+  .year__list {
+    .list();
+    margin-top: 35px;
+    height: auto;
+    transform-origin: top;
+    transition: max-height 1s ease-in-out 0.5s;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleY(1);
+  }
+
+  .year__item {
+    font-size: 12px;
+    line-height: 1.2;
+    padding-bottom: 20px;
+  }
+
+
+@media (min-width: @desktop-width) {
+  .year__wrapper {
+    display: grid;
+    grid-template-columns: 607px 374px;
+    column-gap: 50px;
+    row-gap: 25px;
+    background-color: @basic_white;
+  }
+
+  .year__title {
+    position: relative;
+    display: block;
+    padding: 0 45px;
+    font-size: 76px;
+    text-align: end;
+    border-right: 3px @basic_blue solid;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 35px;
+      right: -10px;
+      width: 17px;
+      height: 17px;
+      background-image: none;
+      background-color: @basic_blue;
+      border-radius: 9px;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      top: 29px;
+      right: -16px;
+      left: auto;
+      width: 29px;
+      height: 29px;
+      background-image: none;
+      background-color: transparent;
+      border: 3px solid @basic_blue;
+      border-radius: 16px;
+    }
+
+  }
+
+  .year__list {
+    .list();
+    margin-top: 35px;
+  }
+
+  .year__item {
+    font-size: 16px;
+    padding-bottom: 20px;
+  }
+}

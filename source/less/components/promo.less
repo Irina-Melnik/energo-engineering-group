@@ -1,21 +1,40 @@
-@media (min-width: @desktop-width) {
   .promo__wrapper {
     .wrapper ();
 
     background-color: @lt_gray;
-    min-height: 454px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 512px;
     height: 100%;
-    padding-top: 41px;
+    padding-top: 27px;
+    padding-bottom: 30px;
   }
 
   .promo__text {
     font-family: @font-family--additional;
     font-weight: 700;
-    font-size: 78px;
+    font-size: 38px;
     line-height: 1;
     color: @basic_white;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+
+@media (min-width: @desktop-width) {
+  .promo__wrapper {
+    min-height: 454px;
+    padding-top: 41px;
+    padding-bottom: 0;
+  }
+
+  .promo__text {
+    font-size: 78px;
     width: 50%;
     margin: 0;
+    text-align: left;
     padding-bottom: 98px;
     padding-left: 36px;
   }

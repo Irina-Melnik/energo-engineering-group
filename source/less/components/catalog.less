@@ -1,0 +1,52 @@
+.catalog__icon {
+  transition: transform 0.3s ease-in;
+}
+
+.catalog__link {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 25px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+
+  .catalog__link-title {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: @basic_orange;
+    margin: 0;
+
+    &:hover {
+      text-decoration: underline 1px solid @basic_orange;
+    }
+  }
+
+  .catalog__list {
+    display: none;
+  }
+
+  .catalog__item {
+    padding-bottom: 20px;
+  }
+
+  .catalog__item-link {
+    font-size: 12px;
+    line-height: 1.2;
+    cursor: pointer;
+
+    &:hover {
+      color: @basic_blue;
+      text-decoration: underline 1px solid @basic_blue;
+    }
+  }
+
+@media (min-width: @desktop-width) {
+  .catalog__item-link {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+}

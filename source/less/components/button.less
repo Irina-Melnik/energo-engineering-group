@@ -1,0 +1,81 @@
+#backToTopButton {
+  display: inline-block;
+  background-color: @basic_orange;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s,
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#backToTopButton::after {
+  content: "^";
+  font-family: @font-family--primary;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+
+// #backToTopButton:hover {
+//   background-color: @basic_orange;
+// }
+
+// #backToTopButton:active {
+//   background-color: @basic_orange;
+// }
+
+#backToTopButton.show {
+  opacity: 0.7;
+  visibility: visible;
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: @font-family--additional;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 1.2;
+  padding: 10px 10px;
+  width: 100%;
+  min-height: 44px;
+  color: @basic_black;
+  cursor: pointer;
+  background-color: @basic_white;
+  border: none;
+}
+
+@media (min-width: @desktop-width) {
+
+  #backToTopButton {
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 18px;
+  }
+
+  #backToTopButton::after {
+    font-size: 3em;
+  }
+
+  .button {
+    font-size: 48px;
+    line-height: 1;
+    padding: 6px 10px;
+    width: 100%;
+    min-height: 60px;
+  }
+}

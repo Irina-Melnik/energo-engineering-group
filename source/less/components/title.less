@@ -1,18 +1,31 @@
+.title {
+  font-family: @font-family--additional;
+  font-size: 40px;
+  line-height: 1.2;
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+
+  &--gray {
+    color: @basic_gray;
+  }
+
+  &--blue,
+  &--equipment {
+    color: @basic_blue;
+  }
+
+  &--orange {
+    color: @basic_orange;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .title {
-    font-family: @font-family--additional;
     font-size: 76px;
-    line-height: 1.2;
-    font-style: normal;
-    font-weight: normal;
-    margin: 0;
 
-    &--gray {
-      color: @basic_gray;
-    }
-
-    &--blue {
-      color: @basic_blue;
+    &--equipment {
+      color: @basic_orange;
     }
   }
 }

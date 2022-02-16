@@ -1,5 +1,30 @@
+.projects__wrapper {
+  .wrapper();
+}
+
+.projects__title {
+  text-align: center;
+  padding: 53px 20px 37px 20px;
+  border-top: 1px solid @lt_gray;
+}
+
+.projects__list {
+  .list();
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 70px;
+}
+
 @media (min-width: @desktop-width) {
-  .projects__wrapper {
-    .wrapper();
+
+  .projects__title {
+    padding: 107px 234px 76px 234px;
+    border-top: 1px solid @lt_gray;
+    text-align: left;
   }
+}
+
+.projects__list {
+  margin-bottom: 0;
 }

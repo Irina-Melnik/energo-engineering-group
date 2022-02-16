@@ -868,6 +868,7 @@ img {
   }
   .product__item {
     background-color: #ffffff;
+    margin-bottom: 100px;
   }
   .product__item-wrapper {
     display: grid;

@@ -1759,7 +1759,6 @@ img {
 }
 .contacts__map {
   position: relative;
-  min-height: 320px;
 }
 .contacts__info {
   font-size: 12px;

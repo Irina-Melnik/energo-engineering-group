@@ -808,13 +808,15 @@ img {
   padding-bottom: 10px;
 }
 .product__catalog--opened {
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 .product__catalog--opened .catalog__link {
   margin-bottom: 25px;
 }
 .product__catalog--opened .catalog__list {
-  display: block;
+  transform: scaleY(1);
+  opacity: 1;
+  max-height: 100%;
 }
 .product__catalog--opened .catalog__icon {
   transform: rotateZ(90deg);
@@ -940,7 +942,13 @@ img {
   margin: 0;
   padding: 0;
   list-style: none;
-  display: none;
+  max-height: 0px;
+  transform-origin: top;
+  transition: max-height 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: opacity 0.25s ease-in 0.1s;
+  transform: scaleY(0);
+  opacity: 0;
 }
 .catalog__item {
   padding-bottom: 20px;

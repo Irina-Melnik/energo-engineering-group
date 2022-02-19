@@ -27,11 +27,15 @@ function toggleClass(item, className, e) {
 }
 
 function ready() {
+
   const workItems = document.querySelectorAll('.works__item, .equipment__item');
   const menuToggler = document.querySelector('.page-header__menu-toggler');
   const serviceItems = document.querySelectorAll('.services__item-wrapper');
   const productItems = document.querySelectorAll('.product__item-wrapper');
   const productCatalogs = document.querySelectorAll('.product__catalog');
+  // const yearList = document.querySelectorAll('.year__list');
+
+  // yearList.forEach(item => item.addEventListener('click', toggleClass.bind(this, item, 'reset-size')))
 
   if (window.innerWidth >= 1280) {
     workItems.forEach(item => {
@@ -68,6 +72,16 @@ function ready() {
     } else {
       backToTopButton.classList.remove('show');
     }
+
+    const yearList = document.querySelectorAll('.year__list');
+    [...yearList].forEach(el => {
+      const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
+      // console.log(`${html.scrollTop} > ${elMidPosition}`)
+      // console.log(html.scrollTop > elMidPosition);
+      if (html.scrollTop > elMidPosition && !el.classList.contains('reset-size')) {
+        el.classList.add('reset-size')
+      }
+    })
   })
 
   backToTopButton.addEventListener('click', function(e) {

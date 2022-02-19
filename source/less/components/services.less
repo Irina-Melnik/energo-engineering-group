@@ -89,77 +89,85 @@
 
   .services__item {
     position: relative;
-    min-height: 609px;
+    height: 609px;
+    overflow: hidden;
+
   }
 
   .services__item-title {
-    position: absolute;
-    display: inline-block;
+    min-height: 140px;
     color: @basic_white;
     height: 148px;
     width: 100%;
     background-color: @basic_blue;
     padding: 18px 0 14px 26px;
     text-align: left;
-    bottom: 0;
-    left: 0;
+    grid-column: ~"1 / 3";
+    grid-row: ~"1 / 2";
+
   }
 
   .services__item-img {
-    width: 607px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 611px;
     height: 609px;
   }
 
   .services__item-wrapper {
-    display: none;
+    display: grid;
+    height: 609px;
+    grid-template-columns: 252px 252px;
+    column-gap: 40px;
+    row-gap: 30px;
+    grid-template-rows: auto auto auto auto;
+    padding: 0;
+    background-color: @basic_blue;
+    transform: translateY(460px);
+    transition: transform 0.1s ease-in;
   }
 
   .services__item-link {
     display: none;
   }
 
+  .services__item-text {
+    .list();
+    padding-left: 26px;
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    color: @basic_white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    &--column {
+      font-size: 12px;
+      line-height: 1.25;
+    }
+  }
+
+  .services__item-text {
+
+    padding-bottom: 12px;
+  }
+
+  .services__item-text__description {
+    grid-column: ~"1 / 3";
+    grid-row: ~"2 / 3";
+  }
+
   .services__item:hover {
 
-    background-color: @basic_blue;
-
-    .services__item-title {
-      position: static;
-      min-height: 140px;
-    }
-
-    .services__item-img {
-      display: none;
-    }
-
     .services__item-wrapper {
-      display: grid;
-      grid-template-columns: 252px 252px;
-      column-gap: 40px;
-      row-gap: 30px;
-      grid-template-rows: auto auto auto;
-      padding: 0;
+      transform: translateY(0);
     }
 
     .services__item-text {
-      .list();
-      padding-left: 26px;
-      font-size: 16px;
-      line-height: 1.2;
-      margin: 0;
-      color: @basic_white;
-
-      &--column {
-        font-size: 12px;
-        line-height: 1.25;
-      }
+      opacity: 1;
     }
-
-    .services__item-text:first-child {
-      grid-column: ~"1 / 3";
-      grid-row: ~"1 / 2";
-      padding-bottom: 12px;
-    }
-
 
   }
 

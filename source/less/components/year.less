@@ -131,10 +131,29 @@
   .year__list {
     .list();
     margin-top: 35px;
+    font-size: 0;
+    opacity: 0;
+    transition: opacity .25s,
+                font-size .5s .25s,
+                margin .5s .25s,
+                padding .5s .25s;
+  }
+
+  .reset-size {
+    font-size: 16px;
+    opacity: 1;
+    transition: font-size .25s,
+                margin .25s,
+                padding .25s,
+                opacity .5s .25s;
+
+    .year__item {
+      padding-bottom: 20px;
+    }
   }
 
   .year__item {
-    font-size: 16px;
-    padding-bottom: 20px;
+    font-size: inherit;
+    padding-bottom: 0px;
   }
 }

@@ -468,6 +468,17 @@ img {
   text-align: center;
 }
 @media (min-width: 1280px) {
+  .promo {
+    display: flex;
+    margin-left: calc((100% - 1240px) / 2);
+    position: relative;
+    min-height: 454px;
+  }
+  .promo__video video {
+    width: 1240px;
+    height: 454px;
+    object-fit: cover;
+  }
   .promo__wrapper {
     min-height: 454px;
     padding-top: 41px;
@@ -1378,8 +1389,8 @@ img {
     position: absolute;
     top: 339px;
     right: 20px;
-    width: 509px;
-    height: 651px;
+    width: 567px;
+    height: 521px;
   }
   .info__text {
     font-size: 20px;

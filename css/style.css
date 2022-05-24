@@ -414,6 +414,10 @@ img {
     color: #ffffff;
   }
 }
+.promo__video-item {
+  width: 321px;
+  height: 512px;
+}
 .promo__wrapper {
   max-width: calc(768px - 1px);
   width: 100%;
@@ -828,7 +832,7 @@ img {
 }
 @media (max-width: 1279px) {
   .product__item-wrapper--closed > p,
-  .product__item-wrapper--closed > img,
+  .product__item-wrapper--closed > picture,
   .product__item-wrapper--closed > div {
     display: none;
   }

@@ -414,9 +414,17 @@ img {
     color: #ffffff;
   }
 }
-.promo__video-item {
-  width: 321px;
-  height: 512px;
+.promo {
+  position: relative;
+  min-height: 512px;
+}
+.promo__video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .promo__wrapper {
   max-width: calc(768px - 1px);
@@ -425,7 +433,9 @@ img {
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  background-color: #c4c4c4;
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

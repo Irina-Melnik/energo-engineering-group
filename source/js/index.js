@@ -75,9 +75,10 @@ function ready() {
 
     const yearList = document.querySelectorAll('.year__list');
     [...yearList].forEach(el => {
-      const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
-      // console.log(`${html.scrollTop} > ${elMidPosition}`)
-      // console.log(html.scrollTop > elMidPosition);
+      const elMidPosition = el.offsetTop - window.innerHeight / 6 * 5;
+      // const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
+      console.log(`${html.scrollTop} > ${elMidPosition}`)
+      console.log(html.scrollTop > elMidPosition);
       if (html.scrollTop > elMidPosition && !el.classList.contains('reset-size')) {
         el.classList.add('reset-size')
       }

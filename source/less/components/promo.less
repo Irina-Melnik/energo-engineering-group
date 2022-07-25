@@ -1,7 +1,23 @@
+  .promo {
+    position: relative;
+    min-height: 512px;
+  }
+
+  .promo__video video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+        object-fit: cover;
+  }
+
   .promo__wrapper {
     .wrapper ();
-
-    background-color: @lt_gray;
+    position: absolute;
+    top: 0;
+    left: 0;
+    // background-color: @lt_gray;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -22,8 +38,19 @@
     text-align: center;
   }
 
-
 @media (min-width: @desktop-width) {
+  .promo {
+    display: flex;
+    margin-left: calc((100% - 1240px) / 2);
+    position: relative;
+    min-height: 454px;
+  }
+
+  .promo__video video{
+    width: 1240px;
+    height: 454px;
+    object-fit: cover;
+  }
   .promo__wrapper {
     min-height: 454px;
     padding-top: 41px;

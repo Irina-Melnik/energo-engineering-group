@@ -80,16 +80,16 @@
                 Наши проекты
               </a>
             </li>
-            <li class="site-navigation__item">
+            <!-- <li class="site-navigation__item">
               <a class="site-navigation__link" href="#geography">
                 География
               </a>
-            </li>
+            </li> -->
           </ul>
         </div>
       </nav>
       <div class="page-header__phone phone">
-        <a class="phone__link" href="tel:79262663268">+7 (926) 266-32-68</a>
+        <a class="phone__link" href="tel:74953800456">+7 (495) 38-00-456</a>
       </div>
       <div class="page-header__email email">
         <a class="email__link" href="mailto:mail@eegroup.ru">mail@eegroup.ru</a>
@@ -99,9 +99,17 @@
   <main>
     <h1 class="visually-hidden">Лендинг компании Энерго инжиниринг груп</h1>
     <section class="promo">
+      <div class="promo__video">
+        <video class="promo__video-item" poster="img/poster.jpg" loop muted autoplay playsinline webkit-playsinline>
+          <source media="(min-width: 1280px)" src="video/EEG-desktop.webm" type="video/webm">
+          <source media="(min-width: 1280px)" src="video/EEG-desktop.mp4" type="video/mp4">
+          <source src="video/EEG-mobile.webm" type="video/webm">
+          <source src="video/EEG-mobile.mp4" type="video/mp4">
+        </video>
+      </div>
       <div class="promo__wrapper">
         <h2 class="visually-hidden">О нас</h2>
-        <p class="promo__text">Инженерные услуги любой сложности</p>
+        <!-- <p class="promo__text">Инженерные услуги любой сложности</p> -->
         <p class="promo__text">EPC/M-контрактор</p>
       </div>
     </section>
@@ -141,8 +149,13 @@
         <h2 class="services__title title title--gray">Наши <span class="title title--blue">услуги</span></h2>
         <ul class="services__list">
           <li class="services__item" id="reconstruction">
-            <img class="services__item-img" src="img/reconstruction.jpg" width="320" height="320"
-              alt="Техническое перевооружение и реконструкция">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/reconstruction-desktop.webp">
+              <source type="image/webp" srcset="img/reconstruction.webp">
+              <source media="(min-width: 1280px)" srcset="img/reconstruction-desktop.jpg">
+              <img class="services__item-img" src="img/reconstruction.jpg" width="320" height="320"
+                alt="Техническое перевооружение и реконструкция">
+            </picture>
             <div class="services__item-wrapper services__item-wrapper--undetailed">
               <h3 class="services__item-title subtitle">Техническое перевооружение и&nbsp;реконструкция</h3>
               <p class="services__item-text services__item-text__description">Мы проводим полный комплекс работ по
@@ -168,7 +181,12 @@
             </div>
           </li>
           <li class="services__item" id="engineering">
-            <img class="services__item-img" src="img/engineering.jpg" width="320" height="320" alt="Инжиниринг">
+            <picture>
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/engineering-desktop.webp">
+              <source type="image/webp" srcset="img/engineering.webp">
+              <source media="(min-width: 1280px)" srcset="img/engineering-desktop.jpg">
+              <img class="services__item-img" src="img/engineering.jpg" width="320" height="320" alt="Инжиниринг">
+            </picture>
             <div class="services__item-wrapper services__item-wrapper--undetailed">
               <h3 class="services__item-title subtitle">Инжиниринг</h3>
               <p class="services__item-text services__item-text__description">EEGroup предлагает комплексные
@@ -218,7 +236,12 @@
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue" href="#">Тепловая
               изоляция</h3>
-            <img class="product__item-img" src="img/insulation.jpg" widht="280" height="282" alt="Тепловая изоляция">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/insulation-desktop.webp">
+              <source type="image/webp" srcset="img/insulation.webp">
+              <source media="(min-width: 1280px)" srcset="img/insulation-desktop.jpg">
+              <img class="product__item-img" src="img/insulation.jpg" widht="280" height="282" alt="Тепловая изоляция">
+            </picture>
             <p class="product__item-text">Тепловая изоляция имеет высокую термостойкость, она поможет защитить элементы
               конструкции от конденсата, сохранить тепло, избежать промерзания и не допустить появления коррозии.
               Тепловая изоляция оборудования и трубопроводов повышает устойчивость к вибрациям и деформациям, имеет
@@ -260,7 +283,12 @@
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue">
               Металлопрокат</h3>
-            <img class="product__item-img" src="img/metal.jpg" widht="280" height="282" alt="Металлопрокат">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/metal-desktop.webp">
+              <source type="image/webp" srcset="img/metal.webp">
+              <source media="(min-width: 1280px)" srcset="img/metal-desktop.jpg">
+              <img class="product__item-img" src="img/metal.jpg" widht="280" height="282" alt="Металлопрокат">
+            </picture>
             <p class="product__item-text">Металлопрокат – это продукция, получаемая путем горячей, теплой или холодной
               прокатки из разных металлов и сплавов.<br>
               Мы работаем с лучшими поставщиками высококачественного металлопроката и стальных труб для строительства.
@@ -306,8 +334,13 @@
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue">Запорно-регулирующая
               арматура</h3>
-            <img class="product__item-img" src="img/fittings.jpg" widht="280" height="282"
-              alt="Запорно-регулирующая арматура">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/fittings-desktop.webp">
+              <source type="image/webp" srcset="img/fittings.webp">
+              <source media="(min-width: 1280px)" srcset="img/fittings-desktop.jpg">
+              <img class="product__item-img" src="img/fittings.jpg" widht="280" height="282"
+                alt="Запорно-регулирующая арматура">
+            </picture>
             <p class="product__item-text">
               Запорно-регулирующая арматура — один из важнейших элементов, предназначенных для регулирования параметров
               рабочей среды, а также перекрытия ее подачи, она позволяет управлять потоками транспортируемых
@@ -329,8 +362,7 @@
               <ul class="catalog__list">
                 <li class="catalog__item">
                   <a class="catalog__item-link" href="http://zavodchzem.ru/ru/продукция" rel="noopener noreferrer">ЗАО
-                    «Энергомаш (Чехов) - ЧЗЭМ», г.
-                    Чехов</a>
+                    «Энергомаш (Чехов) - ЧЗЭМ», г. Чехов</a>
                 </li>
                 <li class="catalog__item">
                   <a class="catalog__item-link" href="http://rou.ru/catalog" rel="noopener noreferrer">ЗАО «Редукционно
@@ -346,6 +378,10 @@
                     rel="noopener noreferrer">ЗАО «ПО «Муромский завод
                     трубопроводной арматуры», г. Муром</a>
                 </li>
+                <li class="catalog__item">
+                  <a class="catalog__item-link" href="https://www.npoflame.ru/" rel="noopener noreferrer">ЗАО «НПО
+                    Флейм», Ленинградская область</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -354,8 +390,13 @@
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue">Котельное и теплообменное
               оборудование</h3>
-            <img class="product__item-img" src="img/heat.jpg" widht="280" height="282"
-              alt="Котельное и теплообменное oборудование">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/heat-desktop.webp">
+              <source type="image/webp" srcset="img/heat.webp">
+              <source media="(min-width: 1280px)" srcset="img/heat-desktop.jpg">
+              <img class="product__item-img" src="img/heat.jpg" widht="280" height="282"
+                alt="Котельное и теплообменное oборудование">
+            </picture>
             <p class="product__item-text">Теплообменное и котельное оборудование должно отвечать всем требованиям ГОСТа,
               ТУ и других нормативов, поскольку от его качества зависит работа многих частей системы. Наши партнеры
               предлагают широкий выбор продукции и элементов для котельного и теплообменного оборудования.
@@ -393,6 +434,10 @@
                     «Редукционно-охладительные установки»,
                     г. Барнаул</a>
                 </li>
+                <li class="catalog__item">
+                  <a class="catalog__item-link" href="http://www.ksk-s.ru/" rel="noopener noreferrer">НПО «КСК», г.
+                    Санкт-Петербург</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -401,8 +446,13 @@
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue">Электротехническое
               оборудование</h3>
-            <img class="product__item-img" src="img/electrical.jpg" widht="280" height="282"
-              alt="Электротехническое оборудование">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/electrical-desktop.webp">
+              <source type="image/webp" srcset="img/electrical.webp">
+              <source media="(min-width: 1280px)" srcset="img/electrical-desktop.jpg">
+              <img class="product__item-img" src="img/electrical.jpg" widht="280" height="282"
+                alt="Электротехническое оборудование">
+            </picture>
             <p class="product__item-text">Для любого предприятия необходимо грамотно подобрать электротехническое
               оборудование, которое будет технологичным и проверенным на практике. Основные требования к
               электротехническому оборудованию — соответствие всем правилам безопасности и гарантия качественного
@@ -443,6 +493,16 @@
                   <a class="catalog__item-link" href="#" rel="noopener noreferrer">ООО НПО «Энерго - Система», г.
                     Дзержинск</a>
                 </li>
+                <li class="catalog__item">
+                  <a class="catalog__item-link" href="https://svel.ru/" rel="noopener noreferrer">АO «Группа «СВЭЛ»</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__item-link" href="https://www.eldin.ru/" rel="noopener noreferrer">АО «ЭЛДИН»</a>
+                </li>
+                <li class="catalog__item">
+                  <a class="catalog__item-link" href="https://www.liftmach.by/" rel="noopener noreferrer">ОАО
+                    «Могилевлифтмаш», г. Могилёв</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -450,7 +510,12 @@
         <li class="product__item" id="pump">
           <div class="product__item-wrapper product__item-wrapper--closed">
             <h3 class="product__item-title product__item-title--show subtitle subtitle--blue">Насосное оборудование</h3>
-            <img class="product__item-img" src="img/pump.jpg" widht="280" height="282" alt="Насосное оборудование">
+            <picture class="product__item-img">
+              <source type="image/webp" media="(min-width: 1280px)" srcset="img/pump-desktop.webp">
+              <source type="image/webp" srcset="img/pump.webp">
+              <source media="(min-width: 1280px)" srcset="img/pump-desktop.jpg">
+              <img class="product__item-img" src="img/pump.jpg" widht="280" height="282" alt="Насосное оборудование">
+            </picture>
             <p class="product__item-text">Насосное оборудование отвечает за перемещение и создание напора жидкостей.<br>
               Существует большое количество насосов и насосных агрегатов, состоящих из комплекса устройств, которые
               позволяют решить все задачи для обеспечения качественной работы водоснабжения, отопления, канализации и
@@ -500,19 +565,43 @@
                 <h4 class="year__title year__title--hide title title--blue">2021</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    Кармановская ГРЭС филиал ООО «БГК»
+                    <h5 class="year__subtitle">Кармановская ГРЭС филиал ООО «БГК»</h5>
+                    <p class="year__text">Модернизация ЩПТ блока № 6 с заменой аккумуляторной батареи и внедрением УТСП
+                    </p>
                   </li>
                   <li class="year__item">
-                    Ново-Стерлитамакская ТЭЦ производственная площадка Стерлитамакской ТЭЦ
+                    <h5 class="year__subtitle">Ново-Стерлитамакская ТЭЦ производственная площадка Стерлитамакской ТЭЦ
+                    </h5>
+                    <p class="year__text">Выполнение работ по модернизации оборудования ЗРУ-110 кВ c заменой
+                      маслонаполненных линейных проходных вводов 110 кВ типа ГБМЛПУ-110/1000У1 на ввода с твёрдой
+                      изоляцией (39 ед.)</p>
                   </li>
                   <li class="year__item">
-                    Филиал ПАО «Квадра»-«Воронежская генерация»
+                    <h5 class="year__subtitle">Филиал ПАО «Квадра»-«Воронежская генерация»</h5>
+                    <p class="year__text">Выполнение строительно-монтажных работ по техническому перевооружению
+                      электротехнического оборудования котельных (1 этап)</p>
+                    <p class="year__text">Выполнение строительно-монтажных работ по техническому перевооружению
+                      оборудования химводоподготовки, восстановлению деаэрации (1 этап)</p>
                   </li>
                   <li class="year__item">
-                    ООО «Фарм Констракшен» (Нижегородская область, Ардатовский район, поселок Идеал)
+                    <h5 class="year__subtitle">ООО «Фарм Констракшен» (Нижегородская область, Ардатовский район, поселок
+                      Идеал)</h5>
+                    <p class="year__text">Выполнение строительно-монтажных работ по монтажу наружного освещения
+                      (материалы Подрядчика). Площадка Карантинник 1 (10), Доращивание 3 (30), Откорм 4 (40), Лагуны 5
+                      (50), Убойно-санитарный пункт 6 (60) на объекте: Свиноводческий комплекс на 6 000 основных
+                      свиноматок полного цикла</p>
+                    <p class="year__text">Выполнение строительно-монтажных работ с материалами подрядчика по монтажу
+                      наружного электроосвещения. Площадка 9 (90) «Водоподготовка» на объекте: Свиноводческий
+                      комплекс на 6 000 основных свиноматок полного цикла</p>
+                    <p class="year__text">Проектирование и строительство временного электроснабжения строительной
+                      площадки объекта: Предприятие по убою и первичной переработке свинины свиноводческих
+                      комплексов РБПИ Групп»</p>
                   </li>
                   <li class="year__item">
-                    ЗАО «Энерго Групп» (г. Нижний Новгород)
+                    <h5 class="year__subtitle">ЗАО «Энерго Групп» (г. Нижний Новгород)</h5>
+                    <p class="year__text">Пуско-наладочные работы по комплексному испытанию трансформатора ТДН
+                      40000/110/6, проверка релейной защиты и автоматики фидера Т-1 110кВ, проверка релейной защиты и
+                      автоматики фидера Т1 6кВ</p>
                   </li>
                 </ul>
               </div>
@@ -522,19 +611,24 @@
                 <h4 class="year__title year__title--hide title title--blue">2020</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    ПАО «ОГК-2» - Киришская ГРЭС
+                    <h5 class="year__subtitle">ПАО «ОГК-2» - Киришская ГРЭС</h5>
+                    <p class="year__text">Сервисное обслуживание трансформатора Т-61 с заменой вводов</p>
+                    <p class="year__text">Монтаж трансформатора ТСЗП-6300/20В У3</p>
                   </li>
                   <li class="year__item">
-                    Филиал ПАО «Квадра»-«Воронежская генерация»
+                    <h5 class="year__subtitle">Филиал ПАО «Квадра»-«Воронежская генерация»</h5>
+                    <p class="year__text">Выполнение работ по разработке проекта технического перевооружения
+                      оборудования химводоподготовки, восстановлению деаэрации</p>
                   </li>
                   <li class="year__item">
-                    ТЭЦ-16 филиал ПАО «Мосэнерго»
+                    <h5 class="year__subtitle">ТЭЦ-16 филиал ПАО «Мосэнерго»</h5>
+                    <p class="year__text">СМР и ПНР с поставкой вспомогательного оборудования по объекту: «Установка РОУ
+                      130/13»</p>
                   </li>
                   <li class="year__item">
-                    АО «Омск РТС»
-                  </li>
-                  <li class="year__item">
-                    Сервисное обслуживание ПТК ЛСУ
+                    <h5 class="year__subtitle">АО «Омск РТС»</h5>
+                    <p class="year__text">Сервисное обслуживание ПТК ЛСУ</p>
+                    <p class="year__text"></p>
                   </li>
                 </ul>
               </div>
@@ -544,22 +638,37 @@
                 <h4 class="year__title year__title--hide title title--blue">2019</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    ООО «БашРТС»
+                    <h5 class="year__subtitle">ООО «БашРТС»</h5>
+                    <p class="year__text"> Комплекс работ (проектно-изыскательские работы,, поставка, СМР и ПНР) по
+                      внедрению вакуумного деаэратора КЦ-1</p>
+                    <p class="year__text">Комплекс работ (проектно-изыскательские работы, поставка, СМР и ПНР) по
+                      внедрению вакуумного деаэратора КЦ-8</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Верхнетагильская ГРЭС» АО «ИНТЕР РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Верхнетагильская ГРЭС» АО «ИНТЕР РАО – Электрогенерация»</h5>
+                    <p class="year__text">Разработка и реализация проекта по перекладке надземных тепловых сетей</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Южноуральская ГРЭС» АО «Интер РАО-Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Южноуральская ГРЭС» АО «Интер РАО-Электрогенерация»</h5>
+                    <p class="year__text">Выполнение работ по модернизации котлоагрегатов ст.№4-13 с установкой
+                      автоматических клапанов на паропроводы пожаротушения пылеприготовительных установок</p>
+                    <p class="year__text">Выполнение работ по внедрению сигнализации на бункерах сырого угля в котельном
+                      отделении не блочной части КТЦ</p>
+                    <p class="year__text">Внедрение схем обеспечения живучести станции по электротехнической части</p>
                   </li>
                   <li class="year__item">
-                    Уфимская ТЭЦ-2 ООО «БГК»
+                    <h5 class="year__subtitle">Уфимская ТЭЦ-2 ООО «БГК»</h5>
+                    <p class="year__text">Выполнение работ по техническому перевооружению трансформаторных вводов 220 кВ
+                      трансформаторов 7 ГТ и 8 ГТ </p>
                   </li>
                   <li class="year__item">
-                    СП «ТЭЦ – 3» АО «ТГК-11»
+                    <h5 class="year__subtitle">СП «ТЭЦ – 3» АО «ТГК-11»</h5>
+                    <p class="year__text">Модернизация (поставка, СМР, ПНР) деаэрационно-подпиточной установки СП ТЭЦ-3
+                    </p>
                   </li>
                   <li class="year__item">
-                    Филиал «Каширская ГРЭС» АО «ИНТЕР РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Каширская ГРЭС» АО «ИНТЕР РАО – Электрогенерация»</h5>
+                    <p class="year__text">Капитальный ремонт светоограждения дымовой трубы № 2</p>
                   </li>
                 </ul>
               </div>
@@ -569,19 +678,32 @@
                 <h4 class="year__title year__title--hide title title--blue">2018</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    Уфимский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Уфимский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Выполнение проектных работ с поставкой конвективного пароперегревателя второй
+                      ступени ПК-13 для нужд ООО «БГК»</p>
+                    <p class="year__text">Выполнение работ по техническому перевооружению и модернизации схемы подпитки
+                      теплофикационных установок для Уфимской ТЭЦ-2 филиала ООО «БГК»</p>
                   </li>
                   <li class="year__item">
-                    Омский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Омский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Проектные работы при установке электрофильтра на котле ст. № 16 АО
+                      «Красноярская ТЭЦ-1»</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Южноуральская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Южноуральская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Реконструкция тепловых сетей</p>
+                    <p class="year__text">Ремонт зданий и сооружений</p>
                   </li>
                   <li class="year__item">
-                    Филиал Печорская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал Печорская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Реконструкция ОРУ-220 кВ (замена масляных выключателей на элегазовые)</p>
                   </li>
                   <li class="year__item">
-                    АО «ТГК-11» ТЭЦ - 3
+                    <h5 class="year__subtitle">АО «ТГК-11» ТЭЦ - 3</h5>
+                    <p class="year__text">Проектно-изыскательские работы по проекту Модернизация
+                      деаэрационно-подпиточной установки</p>
+                    <p class="year__text">Оказание услуг по техническому обслуживанию водоподготовительной установки
+                      (ВПУ) энергоблока ПГУ-90</p>
                   </li>
                 </ul>
               </div>
@@ -591,13 +713,23 @@
                 <h4 class="year__title year__title--hide title title--blue">2017</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    Филиал «Южноуральская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Южноуральская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Ремонт наружных газоходов</p>
+                    <p class="year__text">Модернизация дамбы золошлакоотвалов</p>
+                    <p class="year__text">Модернизация оборудования ОРУ 110кВ</p>
                   </li>
                   <li class="year__item">
-                    Костромское управление филиала АО «Электроцентромонтаж»
+                    <h5 class="year__subtitle">Костромское управление филиала АО «Электроцентромонтаж»</h5>
+                    <p class="year__text">Модернизация электрооборудования 35 кВ ОАО «Славнефть-ЯНОС»</p>
                   </li>
                   <li class="year__item">
-                    Уфимский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Уфимский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Выполнение комплекса работ и поставка оборудования в части модернизации ПТК
+                      АСУ ТП «Овация» ТГ-2
+                      Приуфимской ТЭЦ филиала ООО «БГК»</p>
+                    <p class="year__text">Выполнение работ по техническому перевооружению и модернизации схемы подпитки
+                      теплофикационных
+                      установок путем внедрения деаэратора «УДАВ-300В» для Уфимской ТЭЦ-2 филиала ООО «БГК»</p>
                   </li>
                 </ul>
               </div>
@@ -609,36 +741,60 @@
             <h3 class="equipment__title subtitle">Поставка оборудования</h3>
           </div>
           <ul class="equipment__list">
-            <li class="equipment__item year ">
+            <li class="equipment__item year">
               <div class="year__wrapper">
                 <h4 class="year__title year__title--hide title title--equipment">2019</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка БРОУ необходимой для выполнения работ по
+                      «Техническому перевооружению быстродействующей редукционно-охладительной
+                      установки № 2 100/15 СП «ТЭЦ-3» АО «ТГК-11»</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Нижневартовская ГРЭС» АО «Интер РАО-Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Нижневартовская ГРЭС» АО «Интер РАО-Электрогенерация»</h5>
+                    <p class="year__text">Поставка вводов высоковольтных</p>
                   </li>
                   <li class="year__item">
-                    ООО «Башкирская генерирующая компания»
+                    <h5 class="year__subtitle">ООО «Башкирская генерирующая компания»</h5>
+                    <p class="year__text">Поставка пакетов теплообменной набивки РВП-54 паровых котлов ст.№9 и ст.№10
+                    </p>
                   </li>
                   <li class="year__item">
-                    Омский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Омский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка Шкафов защиты сборных шин и вводов линейных для выполнения работ по
+                      техническому перевооружению схемы дифференциальной защиты шин с торможением 110 кВ, устройства
+                      резервирования отказа выключателя 110 кВ СП ТЭЦ-3</p>
+                    <p class="year__text">Поставка Арматуры высокого давления</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Верхнетагильская ГРЭС» АО «Интер РАО - Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Верхнетагильская ГРЭС» АО «Интер РАО - Электрогенерация»</h5>
+                    <p class="year__text">Поставка вводов высоковольтных</p>
                   </li>
                   <li class="year__item">
-                    Ириклинскоий филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Ириклинскоий филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка редукционно-охладительной установки РОУ 100/8 для Южноуральской ГРЭС
+                    </p>
                   </li>
                   <li class="year__item">
-                    Филиал «Печорская ГРЭС» АО «ИНТЕР РАО - Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Печорская ГРЭС» АО «ИНТЕР РАО - Электрогенерация»</h5>
+                    <p class="year__text">Поставка Выключатели трехфазные элегазовые</p>
+                    <p class="year__text">Поставка Пароперегреватель котлоагрегата БКЗ-420-140 НГМ-4</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Костромская ГРЭС» АО «Интер РАО -Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Костромская ГРЭС» АО «Интер РАО -Электрогенерация»</h5>
+                    <p class="year__text">Поставка высоковольтных вводов</p>
+                    <p class="year__text">Поставка оборудования для модернизации освещения зданий в части
+                      стабилизирующих устройств</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Южноуральская ГРЭС» АО «Интер РАО - Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Южноуральская ГРЭС» АО «Интер РАО - Электрогенерация»</h5>
+                    <p class="year__text">Поставка Клапанов высокого давления</p>
+                  </li>
+                  <li class="year__item">
+                    <h5 class="year__subtitle">Нижневартовская ГРЭС АО «Интер РАО — Электрогенерация»</h5>
+                    <p class="year__text">Набивки РВП</p>
+                    <p class="year__text">Поставка клапанов предохранительных</p>
                   </li>
                 </ul>
               </div>
@@ -648,35 +804,49 @@
                 <h4 class="year__title year__title--hide title title--equipment">2018</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    АО «ТомскРТС»
+                    <h5 class="year__subtitle">АО «ТомскРТС»</h5>
+                    <p class="year__text">Поставка теплоизоляционных материалов</p>
                   </li>
                   <li class="year__item">
-                    Омский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Омский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка дымососов для выполнения работ по объекту: «Техническое
+                      перевооружение электрофильтра котлоагрегата БКЗ-420-140-5 ст.№1 СП «ТЭЦ-5 » АО «ТГК-11»</p>
                   </li>
                   <li class="year__item">
-                    АО «ОмскРТС»
+                    <h5 class="year__subtitle">АО «ОмскРТС»</h5>
+                    <p class="year__text">Поставка труб БД для нужд</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Печорская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Печорская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Поставка трехполюсных элегазовых баковых выключателей типа 3АР1-DT -245кВ</p>
                   </li>
                   <li class="year__item">
-                    Западно-Сибирский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Западно-Сибирский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка металлопроката</p>
+                    <p class="year__text">Поставка МТР для выполнения работ по ремонту электротехнического оборудования
+                      энергоблока №1-6 и
+                      общестанционного оборудования Сургутская ГРЭС-2 ПАО «Юнипро»</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Ириклинская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Ириклинская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Поставка набивки к регенеративному воздухоподогревателю</p>
                   </li>
                   <li class="year__item">
-                    Западно-Сибирский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">АО «Лучегорский угольный разрез»</h5>
+                    <p class="year__text">Поставка шпал</p>
                   </li>
                   <li class="year__item">
-                    АО «Лучегорский угольный разрез»<br>
-                    Поставка шпал
+                    <h5 class="year__subtitle">Пермский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка вентилятора ротора возбудителя типа ВТ-6000 для установки на Ротор
+                      ст.1 для Сургутской ГРЭС-2 ПАО «Юнипро»</p>
                   </li>
                   <li class="year__item">
-                    Автовская
+                    <h5 class="year__subtitle">Автовская ТЭЦ-15 Филиала «Невский» ПАО «ТГК-1»</h5>
+                    <p class="year__text">Поставка фольгопласта</p>
                   </li>
                   <li class="year__item">
-                    Филиал Среднеуральская ГРЭС ПАО «Энел Россия»
+                    <h5 class="year__subtitle">Филиал Среднеуральская ГРЭС ПАО «Энел Россия»</h5>
+                    <p class="year__text">Поставка комплекта сопел и диффузоров парового эжектора ЭП-3-700-1</p>
                   </li>
                 </ul>
               </div>
@@ -686,35 +856,48 @@
                 <h4 class="year__title year__title--hide title title--equipment">2017</h4>
                 <ul class="year__list">
                   <li class="year__item">
-                    Филиал «Печорская ГРЭС» АО «Интер РАО-Электрогенерация»
+                    <h5 class="year__subtitle"> Филиал «Печорская ГРЭС» АО «Интер РАО-Электрогенерация»</h5>
+                    <p class="year__text">Поставка высоковольтных вводов и запасных частей к ним</p>
+                    <p class="year__text">Поставка Трехполюсных элегазовых баковых выключателей типа 3АР1 DT–245кВ с
+                      пофазным управлением</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Гусиноозерская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Гусиноозерская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Поставка Электродвигателей</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Ириклинская ГРЭС» АО «Интер РАО – Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Ириклинская ГРЭС» АО «Интер РАО – Электрогенерация»</h5>
+                    <p class="year__text">Поставка Набивки РВП</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Пермская ГРЭС» АО «Интер РАО-Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Пермская ГРЭС» АО «Интер РАО-Электрогенерация»</h5>
+                    <p class="year__text">Поставка вводы высоковольтные</p>
                   </li>
                   <li class="year__item">
-                    Западно-Сибирский филиал ООО «КВАРЦ Групп»
+                    <h5 class="year__subtitle">Западно-Сибирский филиал ООО «КВАРЦ Групп»</h5>
+                    <p class="year__text">Поставка МТР для выполнения работ по ремонту электротехнического оборудования
+                      энергоблока №1-6 и общестанционного оборудования Сургутская ГРЭС-2 ПАО «Юнипро»</p>
                   </li>
                   <li class="year__item">
-                    Стерлитамакская ТЭЦ филиал ООО «БГК»<br>
-                    Поставка Набивки РВП
+                    <h5 class="year__subtitle">Стерлитамакская ТЭЦ филиал ООО «БГК»</h5>
+                    <p class="year__text">Поставка Набивки РВП</p>
                   </li>
                   <li class="year__item">
-                    ЗАО «Нижневартовской ГРЭС»
+                    <h5 class="year__subtitle">ЗАО «Нижневартовской ГРЭС»</h5>
+                    <p class="year__text">Поставка Теплообменная набивка воздухоподогревателя РВП</p>
                   </li>
                   <li class="year__item">
-                    Филиал «Верхнетагильская ГРЭС» АО «Интер РАО-Электрогенерация»
+                    <h5 class="year__subtitle">Филиал «Верхнетагильская ГРЭС» АО «Интер РАО-Электрогенерация»</h5>
+                    <p class="year__text">Поставка Высоковольтное оборудование</p>
                   </li>
                   <li class="year__item">
-                    Кармановская ГРЭС филиал ООО «БГК»
+                    <h5 class="year__subtitle">Кармановская ГРЭС филиал ООО «БГК»</h5>
+                    <p class="year__text">Поставка Набивки РВП</p>
                   </li>
                   <li class="year__item">
-                    АО «ТГК-11» СП ТЭЦ-5
+                    <h5 class="year__subtitle">АО «ТГК-11» СП ТЭЦ-5</h5>
+                    <p class="year__text">Поставка деталей трубопровода, для выполнения работ по техническому
+                      перевооружению трубопроводов пара высокого давления турбинного цеха</p>
                   </li>
                 </ul>
               </div>
@@ -726,7 +909,12 @@
     <section class="info" id="info">
       <div class="info__wrapper">
         <h2 class="info__title title title--blue">О нас</h2>
-        <img class="info__img" src="img/irbis.jpg" width="279" height="264" alt="Бизнес-центр ИРБИС">
+        <picture class="product__item-img">
+          <source type="image/webp" media="(min-width: 1280px)" srcset="img/team-desktop.webp">
+          <source type="image/webp" srcset="img/team.webp">
+          <source media="(min-width: 1280px)" srcset="img/team-desktop.jpg">
+          <img class="info__img" src="img/team.jpg" width="280" height="408" alt="Наша команда">
+        </picture>
         <p class="info__text">
           Компания ООО «Энергоинжиниринггрупп» (EEGroup) оказывает широкий спектр инженерных услуг, в том числе выполняя
           роль EPC/M-контрактора.
@@ -752,6 +940,7 @@
             <li class="info__item">Высокий уровень инженерной подготовки</li>
             <li class="info__item">Использование инновационных решений</li>
             <li class="info__item">Передовые навыки менеджмента</li>
+            <li class="info__item">Клиентоориентированность</li>
           </ul>
         </div>
       </div>
@@ -813,6 +1002,61 @@
             <picture>
               <source media="(min-width: 1280px)" srcset="img/rbpi-desktop.png">
               <img src="img/rbpi.png" width="159" height="113" alt="Логотип rbpi group">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/shgteslogo-desktop.png">
+              <img src="img/shgteslogo.png" width="155" height="51"
+                alt="Логотип Шахтинская газотурбинная электростанция">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/rosatom-desktop.png">
+              <img src="img/rosatom.png" width="114" height="50" alt="Логотип АТЦ Росатом">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/tatenergo-desktop.png">
+              <img src="img/tatenergo.png" width="149" height="28" alt="Логотип Татэнерго">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/eurosibenergo-desktop.png">
+              <img src="img/eurosibenergo.png" width="131" height="49" alt="Логотип Евросибэнерго">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/ilim-desktop.png">
+              <img src="img/ilim.png" width="112" height="42" alt="Логотип Илим">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/tgk14-desktop.png">
+              <img src="img/tgk14.png" width="79" height="73" alt="Логотип ТГК-14">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/kurgan-desktop.png">
+              <img src="img/kurgan.png" width="74" height="69" alt="Логотип Курганская генерирующая компания">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/autoban-desktop.png">
+              <img src="img/autoban.png" width="133" height="24" alt="Логотип Автобан">
+            </picture>
+          </li>
+          <li class="customers__item">
+            <picture>
+              <source media="(min-width: 1280px)" srcset="img/quartz-desktop.png">
+              <img src="img/quartz.png" width="102" height="84" alt="Логотип Кварц">
             </picture>
           </li>
         </ul>
@@ -881,7 +1125,7 @@
                   телефон:
                 </dt>
                 <dd>
-                  <a class="contacts__phone" href="tel:79262663268">+7 (926) 266-32-68</a>
+                  <a class="contacts__phone" href="tel:74953800456">+7 (495) 38-00-456</a>
                 </dd>
               </div>
               <div class="contacts__item">
@@ -977,7 +1221,7 @@
       </div>
       <div class="footer__column">
         <div class="footer__phone phone">
-          <a class="phone__link phone__link--footer" href="tel:79262663268">+7 (926) 266-32-68</a>
+          <a class="phone__link phone__link--footer" href="tel:74953800456">+7 (495) 38-00-456</a>
         </div>
         <div class="footer__email email">
           <a class="email__link email__link--footer" href="mailto:mail@eegroup.ru">mail@eegroup.ru</a>
@@ -1010,12 +1254,11 @@
               <a class="footer-nav__link" href="#works">Строительно-монтажные работы</a>
               <a class="footer-nav__link" href="#equipment">Поставка оборудования</a>
             </li>
-
-            <li class="footer-nav__item">
+            <!-- <li class="footer-nav__item">
               <a class="footer-nav__link" href="#geography">
                 <h3 class="footer-nav__title">География</h3>
               </a>
-            </li>
+            </li> -->
             <li class="footer-nav__item">
               <a class="footer-nav__link" href="#licenses">
                 <h3 class="footer-nav__title">Лицензии и аккредитации</h3>

@@ -145,15 +145,18 @@
     margin-top: 35px;
     font-size: 0;
     opacity: 0;
+    max-height: 0;
     transition: opacity .25s,
                 font-size .5s .25s,
                 margin .5s .25s,
-                padding .5s .25s;
+                padding .5s .25s,
+                max-height 1s ease-out;
   }
 
   .reset-size {
     font-size: 16px;
     opacity: 1;
+    max-height: 2000px;
     transition: font-size .25s,
                 margin .25s,
                 padding .25s,

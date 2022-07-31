@@ -33,6 +33,32 @@ function ready() {
   const serviceItems = document.querySelectorAll('.services__item-wrapper');
   const productItems = document.querySelectorAll('.product__item-wrapper');
   const productCatalogs = document.querySelectorAll('.product__catalog');
+  const form  = document.querySelector('form');
+  const submitButton = document.querySelector('.form__button');
+
+  form.addEventListener('submit', (event) => {
+    // stop form submission
+    event.preventDefault();
+    submitButton.disabled = true;
+    let formData = new FormData(form);
+    fetch('https://formsubmit.co/info@eeg-rus.ru', {
+      body: formData,
+      method: "post"
+    }).then(res => {
+      if (res.status === 200) {
+        alert('Спасибо, форма была успешно отправлена! ❤');
+        form.reset();
+        submitButton.disabled = false;
+      } else {
+        alert('Не удалось отправить форму, пожалуйста, повторите попытку позже 🙏');
+        submitButton.disabled = false;
+      }
+    }).catch(err => {
+      alert('Не удалось отправить форму, пожалуйста, повторите попытку позже 🙏');
+      submitButton.disabled = false;
+    });
+
+});
   // const yearList = document.querySelectorAll('.year__list');
 
   // yearList.forEach(item => item.addEventListener('click', toggleClass.bind(this, item, 'reset-size')))
@@ -74,11 +100,13 @@ function ready() {
     }
 
     const yearList = document.querySelectorAll('.year__list');
-    [...yearList].forEach(el => {
-      const elMidPosition = el.offsetTop - window.innerHeight / 6 * 5;
+    [...yearList].forEach((el, index) => {
+      const elMidPosition = el.offsetTop - window.innerHeight / 3 * 2;
       // const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
-      console.log(`${html.scrollTop} > ${elMidPosition}`)
-      console.log(html.scrollTop > elMidPosition);
+      // if (index === 0) {
+      //   console.log(`${html.scrollTop} > ${elMidPosition}`)
+      //   console.log(html.scrollTop > elMidPosition);
+      // }
       if (html.scrollTop > elMidPosition && !el.classList.contains('reset-size')) {
         el.classList.add('reset-size')
       }

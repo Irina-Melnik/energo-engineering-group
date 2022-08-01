@@ -46,7 +46,7 @@ function ready() {
       method: "post"
     }).then(res => {
       if (res.status === 200) {
-        alert('Спасибо, форма была успешно отправлена! ❤');
+        alert('Спасибо, форма была успешно отправлена! Мы скоро с Вами свяжемся ❤');
         form.reset();
         submitButton.disabled = false;
       } else {

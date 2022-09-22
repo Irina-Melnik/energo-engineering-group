@@ -1,10 +1,28 @@
 document.addEventListener("DOMContentLoaded", ready);
 
 function changeClass(item, e) {
-  if (window.innerWidth >= 1280) return;
-  const titleElement = item.querySelector('.year__title');
-  titleElement.classList.toggle('year__title--hide');
-  titleElement.classList.toggle('year__title--show');
+  const yearTitle = item.querySelector('.year__title');
+  if (window.innerWidth >= 1280) {
+    return;
+  }
+  yearTitle.classList.toggle('year__title--hide');
+  yearTitle.classList.toggle('year__title--show');
+}
+
+function showYearDetails(item, e) {
+  const yearList = item.nextSibling;
+  yearList.classList.toggle('reset-size');
+  item.classList.toggle('year__title--hide');
+  item.classList.toggle('year__title--show');
+}
+
+function hideYearDetails(item, e) {
+  const yearList = item.parentElement;
+  const yearTitle = yearList.previousSibling;
+  yearList.classList.toggle('reset-size');
+  yearTitle.classList.toggle('year__title--hide');
+  yearTitle.classList.toggle('year__title--show');
+  yearTitle.scrollIntoView();
 }
 
 function toggleMenu(e) {
@@ -29,6 +47,8 @@ function toggleClass(item, className, e) {
 function ready() {
 
   const workItems = document.querySelectorAll('.works__item, .equipment__item');
+  const yearItems = document.querySelectorAll('.year__title');
+  const yearIcons = document.querySelectorAll('.year__icon');
   const menuToggler = document.querySelector('.page-header__menu-toggler');
   const serviceItems = document.querySelectorAll('.services__item-wrapper');
   const productItems = document.querySelectorAll('.product__item-wrapper');
@@ -63,15 +83,21 @@ function ready() {
 
   // yearList.forEach(item => item.addEventListener('click', toggleClass.bind(this, item, 'reset-size')))
 
+  // if (window.innerWidth >= 1280) {
+  //   workItems.forEach(item => {
+  //     const titleElement = item.querySelector('.year__title')
+  //     titleElement.classList.remove('year__title--hide');
+  //     titleElement.classList.add('year__title--show');
+  //   })
+  // }
+
+  workItems.forEach(item => item.addEventListener('click', changeClass.bind(this, item)));
+
   if (window.innerWidth >= 1280) {
-    workItems.forEach(item => {
-      const titleElement = item.querySelector('.year__title')
-      titleElement.classList.remove('year__title--hide');
-      titleElement.classList.add('year__title--show');
-    })
+    yearItems.forEach(item => item.addEventListener('click', showYearDetails.bind(this, item)));
+    yearIcons.forEach(item => item.addEventListener('click', hideYearDetails.bind(this, item)))
   }
 
-  workItems.forEach(item => item.addEventListener('click', changeClass.bind(this, item)))
   menuToggler.addEventListener('click', toggleMenu);
 
   serviceItems.forEach(item => item
@@ -99,18 +125,18 @@ function ready() {
       backToTopButton.classList.remove('show');
     }
 
-    const yearList = document.querySelectorAll('.year__list');
-    [...yearList].forEach((el, index) => {
-      const elMidPosition = el.offsetTop - window.innerHeight / 3 * 2;
-      // const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
-      // if (index === 0) {
-      //   console.log(`${html.scrollTop} > ${elMidPosition}`)
-      //   console.log(html.scrollTop > elMidPosition);
-      // }
-      if (html.scrollTop > elMidPosition && !el.classList.contains('reset-size')) {
-        el.classList.add('reset-size')
-      }
-    })
+    // const yearList = document.querySelectorAll('.year__list');
+    // [...yearList].forEach((el, index) => {
+    //   const elMidPosition = el.offsetTop - window.innerHeight / 3 * 2;
+    //   // const elMidPosition = el.offsetTop + el.getBoundingClientRect().height - window.innerHeight / 3 * 2;
+    //   // if (index === 0) {
+    //   //   console.log(`${html.scrollTop} > ${elMidPosition}`)
+    //   //   console.log(html.scrollTop > elMidPosition);
+    //   // }
+    //   if (html.scrollTop > elMidPosition && !el.classList.contains('reset-size')) {
+    //     el.classList.add('reset-size')
+    //   }
+    // })
   })
 
   backToTopButton.addEventListener('click', function(e) {

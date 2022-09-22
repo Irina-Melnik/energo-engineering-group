@@ -96,6 +96,10 @@
     padding: 5px;
   }
 
+  .year__icon {
+    display: none;
+  }
+
 @media (min-width: @desktop-width) {
   .year__wrapper {
     display: grid;
@@ -112,6 +116,10 @@
     font-size: 76px;
     text-align: end;
     border-right: 3px @basic_blue solid;
+
+    &:hover {
+      text-decoration: underline;
+    }
 
     &::after {
       position: absolute;
@@ -184,5 +192,10 @@
     margin: 0;
     padding: 5px;
     padding-left: 0;
+  }
+
+  .year__icon {
+    display: block;
+    margin: 15px auto 35px 116px;
   }
 }
